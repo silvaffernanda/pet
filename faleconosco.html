@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!-- Mostrar versão atualizada do html  -->
+<html lang="pt-br">
+    <!-- Idioma que será utilizado  -->
+    <head>
+        <!-- Parte inteligente da pagina onde irá as configurações de dispositivos, formatção e contéudo -->
+        <meta charset="UTF-8">  
+        <!-- Para aceitar caracteres especiais  -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Essa opção permite que os desenvolvedores especifiquem qual versão do Internet Explorer deve see usada para exibir a pagina -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Configurações para dispositivos moveis  -->
+        <meta name="description content">
+        <!-- Aqui você coloca uma discrição sobre a pagina -->
+        <meta name="keywords" content="">
+        <!-- Palavra chave para o site de pesquisa te encontrar -->
+     <title>Produtos</title>   
+     
+     <link rel="icon" href="favicon.ico"/> 
+
+     <style>
+        img{
+            width: 200px; /*Largura*/
+            height: 200px;/* ALTURA */   
+            width: 180px;
+            display:block;
+            margin: auto; 
+        }
+
+        h1{
+            color: #fff; /* cor da letra */
+            background-color: #5b1f00;/* cor do fundo */
+            font-family: Verdana, Geneva, Tahoma, sans-serif;/* fonte */
+            text-align: center;/* centralizar o texto */
+            
+        }
+
+        body{
+            background-color: #e6b68b/* cor do fundo do site */
+        }
+
+        li{
+            display: inline; * para ocultar os itens em lista na pagina */
+        }
+
+        td{
+            padding: 20px;* Espaçamento entre o conteúdo e a margem dentro da coluna */
+            text-align: justify; /*para alinhar o texto*/
+            font-size: 15px;              
+        }
+
+        th{
+            font-size: 20px;
+            text-align: center;
+        }
+
+        a:link{   /* formatação dos links direto no a: */
+            color: #5b1f00;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 14px;/* tamanho fonte */
+        }
+
+        a:hover{/* Quando passa o mause mudar algo */
+            color: #fff;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 20px;
+        }
+
+        a:visited{ /* link já clicados */
+            color:rgb(242, 243, 172) ;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+            font: size 14px; ;
+        }
+
+        .logo{
+            width: 80px;
+            height: 80px;
+            display: block; /*TRANSFORMEI EM BLOCK PARA MOVIMENTAR NO BADY*/
+            margin: auto; 
+        }
+
+        ul{  
+            text-align: center; /*ALINHAMENTO DOS LINS PQ ESTÃO DENTRO DO UL*/
+       }
+
+       legend{
+        color: #3a1401;
+        font-size: 18px;
+       }
+
+       form{
+        width: 50%;
+        margin: auto;
+       }
+
+       
+
+       
+    </style>
+
+    </head>
+
+    <body>
+        <img src="logo.png" class="logo">
+
+        <ul><!-- Para acessibilidade é necessário que os lins estejam dentro de uma lista -->
+            <li><a href="index.html">HOME |</a></li>
+            <li><a href="quemsomos.html">QUEM SOMOS |</a></li>
+            <li><a href="produtos.html">PRODUTOS |</a></li>
+            <li><a href="faleconosco.html">FALE CONOSCO |</a></li>
+        </ul>
+       
+        <h1>FALE CONOSCO</h1>
+
+       
+         
+    <form method="post" id="fContato" action="mailto:empresax@gmail.com">
+       
+    
+        <fieldset id="usuario"> 
+            <legend>Identificação do Usuário</legend>
+    
+        <p>
+            <label for="cnome">Nome</label> 
+            <input type="text" name="tNome" id="cNome" size="20" maxlength="20" placeholder="Digite seu nome aqui" autofocus required>
+        </p>
+             
+        <p>
+            <label for="email">Email</label>
+            <input type="email" name="temail" id="cEmail" size="30" required> 
+        </p> 
+
+        <p>
+            <label for="telefone">Telefone</label>
+            <input type="text">
+        </p>
+
+        <p>
+            <label for="data">Data de Nsascimento</label>
+            <input type="date" tNasc id="cNasc">  
+        </p>
+
+        
+    
+       </fieldset>  
+    
+       <fieldset id="endereço">
+            <legend>Endereço do Usuário</legend>
+    
+        <p>
+            <label for="cRua">Logradouro</label>
+            <input type="text" name="tRua" id="cRua" size="30" maxlength="30" placeholder="Rua, Av, Trav, ..." required>
+            <label for="cNum">Número</label>
+            <input type="number" name="tName" id="cNum" min="0" max="99999">
+            <label for="cCid">Cidade</label>
+            <input type="text" name="tCid" id="cCid" size="40" maxlength="40">
+        </p>    
+        </FIeldset> 
+    
+        <fieldset id mensagem>
+            <legend>Mensagem do Usuário</legend>
+    
+          
+        <p>
+            <label for="cMsg">Mensagem</label>
+            <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe sua mensagem"></textarea>
+           
+        </p>
+        </fieldset>
+        <input type="submit" name="Enviar"> 
+        <input type="reset" name="Limpar">
+    
+       </form> 
+    </table>
+
+    </body>
+     
+</html>
+
+
+
+
+
+
+
+
